@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  gateway:
+    build: .
+    ports:
+      - "3009:3009"
+      - "4001:4001"
+    environment:
+      - NODE_ENV=production
+      - COUCHBASE_HOST=couchbase-node
+      - COUCHBASE_BUCKET=tridion_cms
+    depends_on:
+      - couchbase-node
+    networks:
+      - tridion-network
+
+  couchbase-node:
+    image: couchbase/server:enterprise-7.6.0
+    ports:
+      - "8091-8096:8091-8096"
+      - "11210:11210"
+    environment:
+      - CB_DATAPATH=/opt/couchbase/var
+    networks:
+      - tridion-network
+
+networks:
+  tridion-network:
+    driver: bridge
