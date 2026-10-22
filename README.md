@@ -17,7 +17,7 @@
 
 | Target | URL | Description |
 | :--- | :--- | :--- |
-| **Public Live Application** | [**https://brakes-troy-del-glen.trycloudflare.com**](#) *(Active Cloudflare Tunnel)* | Full live interactive enterprise portal, cluster topology, N1QL console, and CMS studio |
+| **Public Live Application** | [**https://livecam-declared-mud-tennis.trycloudflare.com**](https://livecam-declared-mud-tennis.trycloudflare.com) | Full live interactive enterprise portal, cluster topology, N1QL console, and CMS studio |
 | **GitHub Repository** | [**github.com/rahulgarg55/tridion-microservices-cms**](https://github.com/rahulgarg55/tridion-microservices-cms) | Production-ready repository synchronized on `main` and `master` |
 | **Local Host** | `http://localhost:3009` | Local Vite / Node.js development server |
 
